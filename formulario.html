@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Documento formateado -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +8,32 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
-  <h1>Bienvenidos a mi fiesta</h1>
-  <h2>Por favor, confirmar asistencia:</h2>
-
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <h1>Mis XV</h1>
+  <h2>Por favor, confirma tú asistencia!</h2>
+<!-- con el evento onsubmit tengo mis dudas de si esta bien -->
+  <form class="form">
+    <label>Nombre:<input type="text" name="name" id="name"></label>
+    <br>
+    <!-- "<br />" Cerrar las etiquetas sin dejar espacios para mejorar legibilidad -->
+    <label>Edad:<input type="number" name="age" id="age"></label>
     <br />
-    Edad <input type="number" name="age" id="age">
-    <br />
-
-    Nacionalidad
+    <!--     Considero que hacer uso de la etiqueta label, ayuda a que la comprensión y uso del form sea más fácil, por ello me parece buena practica ponerlas. -->
+    <label>Nacionalidad:
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
-    </select>
+    </select></label>
     <br />
     <input type="submit">
   </form>
 
   <div>
     <h2>Lista de invitados</h2>
-
   </div>
-
   <script src="../formulario.js"></script>
 </body>
-
 </html>
